@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{F5AF0A76-89E5-31E3-623F-B71A6E6886D4}") = "PandaTree", "Assembly-CSharp.csproj", "{55190D5B-0784-3EF0-D1F9-DE104B01C0E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55190D5B-0784-3EF0-D1F9-DE104B01C0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55190D5B-0784-3EF0-D1F9-DE104B01C0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55190D5B-0784-3EF0-D1F9-DE104B01C0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55190D5B-0784-3EF0-D1F9-DE104B01C0E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
