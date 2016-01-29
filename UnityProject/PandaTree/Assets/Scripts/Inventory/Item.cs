@@ -7,13 +7,4 @@ public abstract class Item : MonoBehaviour {
 
     public int ItemOfferScore { get { return this.itemOfferScore; } }
     
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

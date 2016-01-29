@@ -1,17 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NonEatable : Item {
+public abstract class NonEatable : Item {
+    protected bool isEatable = false;
 
-    protected bool isEatable = false; 
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool IsEatable { get { return this.isEatable; } }
 }
