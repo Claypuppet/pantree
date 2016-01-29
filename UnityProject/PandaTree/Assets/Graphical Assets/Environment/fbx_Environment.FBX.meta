@@ -1,0 +1,128 @@
+fileFormatVersion: 2
+guid: 55c1e088b73d55d439016ed94e528477
+timeCreated: 1454099221
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: obj_BackgroundImage
+    100004: obj_BackgroundTree
+    100006: obj_Grass
+    100008: obj_Ground
+    100010: obj_Sun
+    100012: obj_TotemTree
+    100014: obj_TreeLeaves
+    100016: obj_UndergroundEdges
+    100018: obj_WaterBackground
+    100020: obj_WaterBottom
+    100022: obj_WaterSurface
+    400000: //RootNode
+    400002: obj_BackgroundImage
+    400004: obj_BackgroundTree
+    400006: obj_Grass
+    400008: obj_Ground
+    400010: obj_Sun
+    400012: obj_TotemTree
+    400014: obj_TreeLeaves
+    400016: obj_UndergroundEdges
+    400018: obj_WaterBackground
+    400020: obj_WaterBottom
+    400022: obj_WaterSurface
+    2300000: obj_BackgroundImage
+    2300002: obj_BackgroundTree
+    2300004: obj_Grass
+    2300006: obj_Ground
+    2300008: obj_Sun
+    2300010: obj_TotemTree
+    2300012: obj_TreeLeaves
+    2300014: obj_UndergroundEdges
+    2300016: obj_WaterBackground
+    2300018: obj_WaterBottom
+    2300020: obj_WaterSurface
+    3300000: obj_BackgroundImage
+    3300002: obj_BackgroundTree
+    3300004: obj_Grass
+    3300006: obj_Ground
+    3300008: obj_Sun
+    3300010: obj_TotemTree
+    3300012: obj_TreeLeaves
+    3300014: obj_UndergroundEdges
+    3300016: obj_WaterBackground
+    3300018: obj_WaterBottom
+    3300020: obj_WaterSurface
+    4300000: obj_WaterSurface
+    4300002: obj_WaterBackground
+    4300004: obj_BackgroundImage
+    4300006: obj_Grass
+    4300008: obj_TotemTree
+    4300010: obj_Ground
+    4300012: obj_Sun
+    4300014: obj_TreeLeaves
+    4300016: obj_WaterBottom
+    4300018: obj_BackgroundTree
+    4300020: obj_UndergroundEdges
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
