@@ -79,8 +79,8 @@
   <ItemGroup>
     <Compile Include="Assets\BubbleController.cs" />
     <Compile Include="Assets\Jupajuu.cs" />
+    <Compile Include="Assets\Scripts\Environment\InteractablePlaces\CollectibleItem.cs" />
     <Compile Include="Assets\Scripts\Environment\InteractablePlaces\InteractablePlace.cs" />
-    <Compile Include="Assets\Scripts\Environment\InteractablePlaces\ItemPlace.cs" />
     <Compile Include="Assets\Scripts\Environment\InteractablePlaces\Lake.cs" />
     <Compile Include="Assets\Scripts\Environment\InteractablePlaces\Shrine.cs" />
     <Compile Include="Assets\Scripts\Environment\InteractablePlaces\Storage.cs" />
@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\Environment\Weather\Weather.cs" />
     <Compile Include="Assets\Scripts\GUI\InventoryItemDelegate.cs" />
     <Compile Include="Assets\Scripts\GUI\PanelInventoryHandler.cs" />
+    <Compile Include="Assets\Scripts\GUI\PanelSeasonHandler.cs" />
     <Compile Include="Assets\Scripts\GameHandler.cs" />
     <Compile Include="Assets\Scripts\Inventory\Apple.cs" />
     <Compile Include="Assets\Scripts\Inventory\Banana.cs" />

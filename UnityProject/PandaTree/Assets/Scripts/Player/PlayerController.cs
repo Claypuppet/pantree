@@ -5,7 +5,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour {
 
-    public float moveForce = 5f;
+    public float MoveSpeed = 5f;
 
     Vector3 position;
     Transform myTrans;
@@ -19,19 +19,19 @@ public class PlayerController : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-
+        float DeltaTime = Time.deltaTime;
         float moveHorizontal = CrossPlatformInputManager.GetAxis("Horizontal");
         float moveVertical = CrossPlatformInputManager.GetAxis("Vertical");
 
         if (moveHorizontal > 0 && moveHorizontal <= 1)
         {
-
+            myTrans.Translate(moveHorizontal * MoveSpeed * DeltaTime, 0, 0, 0);
         }
         if (moveHorizontal >= -1 && moveHorizontal < 0)
         {
-            
+            myTrans.Translate(moveHorizontal * MoveSpeed * DeltaTime, 0, 0);
         }
 
     }
