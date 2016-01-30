@@ -10,12 +10,12 @@ public class PanelInventoryHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+	    
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    
 	}
 
     public void UpdateInventory(List<Item> inv) {
@@ -23,6 +23,6 @@ public class PanelInventoryHandler : MonoBehaviour {
     }
 
     private void SetAmountText(string objectName, int amount) {
-
+        GameObject.Find(objectName).GetComponent<InventoryItemDelegate>().SetText(amount.ToString());
     }
 }

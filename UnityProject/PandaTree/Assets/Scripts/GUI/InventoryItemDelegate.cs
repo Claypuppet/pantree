@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class InventoryItem : MonoBehaviour {
+public class InventoryItemDelegate : MonoBehaviour {
 
     public GameObject textField;
 
