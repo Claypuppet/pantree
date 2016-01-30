@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Spring : MonoBehaviour {
+public class Spring : Season {
 
 	// Use this for initialization
 	void Start () {

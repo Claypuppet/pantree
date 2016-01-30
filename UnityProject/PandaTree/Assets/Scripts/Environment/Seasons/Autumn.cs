@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Autumn : MonoBehaviour {
+public class Autumn : Season {
 
 	// Use this for initialization
 	void Start () {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Leaf : NonEatable{
+public class Leaf : NonEdible{
 
 	// Use this for initialization
     void Start()

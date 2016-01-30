@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Apple : Edible {
+public class Water : NonEdible {
 
 	// Use this for initialization
     void Start()
     {
-        this.name = "Apple";
-        this.itemOfferScore = 5;
-        this.restoreAmount = 5;
+        this.name = "Water";
+        this.itemOfferScore = 1;
 	}
 	
 	// Update is called once per frame
