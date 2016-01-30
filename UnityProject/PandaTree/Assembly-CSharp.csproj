@@ -45,6 +45,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Environment\Seasons\Autumn.cs" />
+     <Compile Include="Assets\Scripts\Environment\Seasons\Season.cs" />
+     <Compile Include="Assets\Scripts\Environment\Seasons\Spring.cs" />
+     <Compile Include="Assets\Scripts\Environment\Seasons\Summer.cs" />
+     <Compile Include="Assets\Scripts\Environment\Seasons\Winter.cs" />
+     <Compile Include="Assets\Scripts\Environment\Weather\Weather.cs" />
      <Compile Include="Assets\Scripts\GameHandler.cs" />
      <Compile Include="Assets\Scripts\Inventory\Apple.cs" />
      <Compile Include="Assets\Scripts\Inventory\Banana.cs" />
