@@ -3,16 +3,9 @@ using System.Collections;
 
 public class Apple : Edible {
 
-	// Use this for initialization
-    void Start()
-    {
+    public Apple() {
         this.name = "Apple";
         this.itemOfferScore = 5;
         this.restoreAmount = 5;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
 }

@@ -19,11 +19,11 @@ public class PanelInventoryHandler : MonoBehaviour {
 
     public void UpdateInventory(List<Item> inv) {
         // So quick and dirty ;)
-        this.SetAmountText("Apple", inv.Count(item => item.name == "Apple"));
-        this.SetAmountText("Banana", inv.Count(item => item.name == "Banana"));
-        this.SetAmountText("DragonEgg", inv.Count(item => item.name == "DragonEgg"));
-        this.SetAmountText("Leaf", inv.Count(item => item.name == "Leaf"));
-        this.SetAmountText("Water", inv.Count(item => item.name == "Water"));
+        this.SetAmountText("Apple", inv.Count(item => item.Name == "Apple"));
+        this.SetAmountText("Banana", inv.Count(item => item.Name == "Banana"));
+        this.SetAmountText("DragonEgg", inv.Count(item => item.Name == "DragonEgg"));
+        this.SetAmountText("Leaf", inv.Count(item => item.Name == "Leaf"));
+        this.SetAmountText("Water", inv.Count(item => item.Name == "Water"));
     }
 
     private void SetAmountText(string objectName, int amount) {
