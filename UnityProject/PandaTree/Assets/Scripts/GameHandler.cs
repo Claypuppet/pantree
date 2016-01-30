@@ -3,14 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class GameHandler : MonoBehaviour {
+    private GameObject player;
 
-    private int playerScore;
-
-    public int PlayerScore { get { return this.playerScore; } }
+    public GameObject Player { get { return this.player; } set { this.player = value; } }
 
 	// Use this for initialization
 	void Start () {
-        this.playerScore = 0;
+        
 	}
 	
 	// Update is called once per frame
