@@ -57,12 +57,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -77,6 +71,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Environment\Seasons\Autumn.cs" />
+    <Compile Include="Assets\Scripts\Environment\Seasons\Season.cs" />
+    <Compile Include="Assets\Scripts\Environment\Seasons\Spring.cs" />
+    <Compile Include="Assets\Scripts\Environment\Seasons\Summer.cs" />
+    <Compile Include="Assets\Scripts\Environment\Seasons\Winter.cs" />
+    <Compile Include="Assets\Scripts\Environment\Weather\Weather.cs" />
     <Compile Include="Assets\Scripts\GameHandler.cs" />
     <Compile Include="Assets\Scripts\Inventory\Apple.cs" />
     <Compile Include="Assets\Scripts\Inventory\Banana.cs" />
@@ -84,8 +84,8 @@
     <Compile Include="Assets\Scripts\Inventory\Item.cs" />
     <Compile Include="Assets\Scripts\Inventory\Leaf.cs" />
     <Compile Include="Assets\Scripts\Inventory\NonEatable.cs" />
-    <Compile Include="Assets\Scripts\Player\MoveScript.cs" />
-    <Compile Include="Assets\Scripts\Player\TouchController.cs" />
+    <Compile Include="Assets\Scripts\Player\JoyStick.cs" />
+    <Compile Include="Assets\Scripts\Player\TouchButtonLogic.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
