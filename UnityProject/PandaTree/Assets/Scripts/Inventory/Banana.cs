@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Banana : Eatable {
+public class Banana : Edible {
 
 	// Use this for initialization
 	void Start () {

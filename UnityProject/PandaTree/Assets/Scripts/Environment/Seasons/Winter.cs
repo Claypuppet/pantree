@@ -1,14 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Apple : Edible {
+public class Winter : Season {
 
 	// Use this for initialization
-    void Start()
-    {
-        this.name = "Apple";
-        this.itemOfferScore = 5;
-        this.restoreAmount = 5;
+	void Start () {
+	
 	}
 	
 	// Update is called once per frame

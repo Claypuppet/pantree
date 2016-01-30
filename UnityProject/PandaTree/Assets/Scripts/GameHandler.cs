@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameHandler : MonoBehaviour {
 
-	public GameObject EnvironmentPrefab;
+    private int playerScore;
+
+    public int PlayerScore { get { return this.playerScore; } }
 
 	// Use this for initialization
 	void Start () {
-		EnvironmentPrefab = GameObject.FindGameObjectWithTag ("Environment");
+        this.playerScore = 0;
 	}
 	
 	// Update is called once per frame
