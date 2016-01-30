@@ -3,13 +3,10 @@ using System.Collections;
 
 public class Autumn : Season {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public Autumn() {
+        this.name = "autumn";
+        this.minDuration = 30000;
+        this.maxDuration = 45000;
+        // Add more propeties
+    }
 }

@@ -3,13 +3,10 @@ using System.Collections;
 
 public class Spring : Season {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public Spring() {
+        this.name = "spring";
+        this.minDuration = 30000;
+        this.maxDuration = 45000;
+        // Add more propeties
+    }
 }

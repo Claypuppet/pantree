@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class PanelInventoryHandler : MonoBehaviour {
 
-
 	// Use this for initialization
 	void Start () {
 	    
