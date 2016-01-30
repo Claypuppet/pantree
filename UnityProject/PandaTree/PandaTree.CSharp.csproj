@@ -78,6 +78,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameHandler.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Apple.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Banana.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Eatable.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Item.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Leaf.cs" />
+    <Compile Include="Assets\Scripts\Inventory\NonEatable.cs" />
+    <Compile Include="Assets\Scripts\Player\MoveScript.cs" />
     <Compile Include="Assets\Scripts\Player\TouchController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
