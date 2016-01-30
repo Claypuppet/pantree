@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WaterCollectible : CollectibleItem
+public class LeafCollectable : CollectableItem
 {
 
 	// Use this for initialization
-	void Start () {
-        this.item = new Water();
+    void Start() {
+        this.item = new Leaf();
 	}
 	
 	// Update is called once per frame

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BananaCollectible : CollectibleItem
+public class BananaCollectable : CollectableItem
 {
 
 	// Use this for initialization

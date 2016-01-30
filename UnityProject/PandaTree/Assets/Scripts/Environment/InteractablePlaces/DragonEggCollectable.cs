@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LeafCollectibleNewBehaviourScript : CollectibleItem
+public class DragonEggCollectable : CollectableItem
 {
 
 	// Use this for initialization
     void Start() {
-        this.item = new Leaf();
+        this.item = new DragonEgg();
 	}
 	
 	// Update is called once per frame
