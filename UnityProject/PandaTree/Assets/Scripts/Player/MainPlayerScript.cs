@@ -25,4 +25,34 @@ public class MainPlayerScript : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void AddScore(int amount) {
+        // Add score 
+        this.score += amount;
+    }
+
+    public void AddItemToInventory(Item item) {
+        // Add an item to your inventory
+        this.inventory.Add(item);
+    }
+
+    public void RemoveItemFromInventory(Item item) {
+        // Remove an item from your inventory
+        this.inventory.Remove(item);
+    }
+
+    public void MakeOffer() {
+        // Remove all items from inventory and move it to offered
+        for (int i = this.inventory.Count; i >= 0; i--) {
+            this.offered.Add(this.inventory[i]);
+            this.inventory.RemoveAt(i);
+        }
+    }
+
+    public void Eat(Edible food) {
+         // Can only eat from storage, so dont need to remove from inventory
+        this.lifeEnergy += food.RestoreAmount;
+    }
+
+    
 }
