@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Apple : Eatable {
+public class Apple : Edible {
 
 	// Use this for initialization
     void Start()

@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class Eatable : Item{
+public abstract class Edible : Item{
 
-    protected bool isEatable = true; 
+    protected bool isEdible = true; 
     protected int restoreAmount; // Amount of life energy the food restores
 
-    public bool IsEatable { get { return this.isEatable; } }
+    public bool IsEdible { get { return this.isEdible; } }
     public int RestoreAmount { get { return this.restoreAmount; } }
 
 }
