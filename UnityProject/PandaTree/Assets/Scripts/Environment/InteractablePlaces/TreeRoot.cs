@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TreeRoot : MonoBehaviour {
+public class TreeRoot : InteractablePlace {
 
 	// Use this for initialization
 	void Start () {
