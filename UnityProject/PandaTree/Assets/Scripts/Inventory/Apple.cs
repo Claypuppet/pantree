@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour {
+public class Apple : Edible {
 
 	// Use this for initialization
-	void Start () {
-	
+    void Start()
+    {
+        this.name = "Apple";
+        this.itemOfferScore = 5;
+        this.restoreAmount = 5;
 	}
 	
 	// Update is called once per frame
