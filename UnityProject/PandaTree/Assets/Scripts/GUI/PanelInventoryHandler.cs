@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine.UI;
 
 public class PanelInventoryHandler : MonoBehaviour {
 
@@ -16,9 +18,11 @@ public class PanelInventoryHandler : MonoBehaviour {
 	
 	}
 
-    public void updateInventory(List<Item> inv) {
+    public void UpdateInventory(List<Item> inv) {
 
     }
 
+    private void SetAmountText(string objectName, int amount) {
 
+    }
 }
