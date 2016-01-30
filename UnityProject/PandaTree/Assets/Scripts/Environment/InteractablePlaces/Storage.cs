@@ -13,4 +13,8 @@ public class Storage : InteractablePlace
 	void Update () {
 	
 	}
+
+    public override void interact() {
+
+    }
 }

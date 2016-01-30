@@ -12,4 +12,8 @@ public class TreeRoot : InteractablePlace {
 	void Update () {
 	
 	}
+
+    public override void interact() {
+
+    }
 }
