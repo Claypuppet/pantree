@@ -1,56 +1,92 @@
 fileFormatVersion: 2
-guid: 55c1e088b73d55d439016ed94e528477
-timeCreated: 1454099221
+guid: be62bcd83660a41a69d7faf27f4b5efa
+timeCreated: 1454154853
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: obj_BackgroundImage
-    100004: obj_BackgroundTree
-    100006: obj_Grass
-    100008: obj_Ground
-    100010: obj_Sun
-    100012: obj_TotemTree
-    100014: obj_TreeLeaves
-    100016: obj_UndergroundEdges
-    100018: obj_WaterBackground
-    100020: obj_WaterBottom
-    100022: obj_WaterSurface
-    400000: //RootNode
-    400002: obj_BackgroundImage
-    400004: obj_BackgroundTree
-    400006: obj_Grass
-    400008: obj_Ground
-    400010: obj_Sun
-    400012: obj_TotemTree
-    400014: obj_TreeLeaves
-    400016: obj_UndergroundEdges
-    400018: obj_WaterBackground
-    400020: obj_WaterBottom
-    400022: obj_WaterSurface
+    100000: Bone003
+    100002: Bone007
+    100004: Bone018
+    100006: Bone019
+    100008: //RootNode
+    100010: obj_BackgroundImage
+    100012: obj_BackgroundTree
+    100014: obj_Grass
+    100016: obj_Ground
+    100018: obj_Ground001
+    100020: obj_LifeLine
+    100022: obj_Sun
+    100024: obj_TotemTree
+    100026: obj_TreeLeaves
+    100028: obj_UndergroundEdges
+    100030: obj_WaterBackground
+    100032: obj_WaterBottom
+    100034: obj_WaterSurface
+    100036: Plane001
+    100038: Plane002
+    100040: Plane003
+    100042: Plane004
+    100044: Plane005
+    400000: Bone003
+    400002: Bone007
+    400004: Bone018
+    400006: Bone019
+    400008: //RootNode
+    400010: obj_BackgroundImage
+    400012: obj_BackgroundTree
+    400014: obj_Grass
+    400016: obj_Ground
+    400018: obj_Ground001
+    400020: obj_LifeLine
+    400022: obj_Sun
+    400024: obj_TotemTree
+    400026: obj_TreeLeaves
+    400028: obj_UndergroundEdges
+    400030: obj_WaterBackground
+    400032: obj_WaterBottom
+    400034: obj_WaterSurface
+    400036: Plane001
+    400038: Plane002
+    400040: Plane003
+    400042: Plane004
+    400044: Plane005
     2300000: obj_BackgroundImage
     2300002: obj_BackgroundTree
     2300004: obj_Grass
     2300006: obj_Ground
-    2300008: obj_Sun
-    2300010: obj_TotemTree
-    2300012: obj_TreeLeaves
-    2300014: obj_UndergroundEdges
-    2300016: obj_WaterBackground
-    2300018: obj_WaterBottom
-    2300020: obj_WaterSurface
+    2300008: obj_Ground001
+    2300010: obj_LifeLine
+    2300012: obj_Sun
+    2300014: obj_TotemTree
+    2300016: obj_TreeLeaves
+    2300018: obj_UndergroundEdges
+    2300020: obj_WaterBackground
+    2300022: obj_WaterBottom
+    2300024: obj_WaterSurface
+    2300026: Plane001
+    2300028: Plane002
+    2300030: Plane003
+    2300032: Plane004
+    2300034: Plane005
     3300000: obj_BackgroundImage
     3300002: obj_BackgroundTree
     3300004: obj_Grass
     3300006: obj_Ground
-    3300008: obj_Sun
-    3300010: obj_TotemTree
-    3300012: obj_TreeLeaves
-    3300014: obj_UndergroundEdges
-    3300016: obj_WaterBackground
-    3300018: obj_WaterBottom
-    3300020: obj_WaterSurface
+    3300008: obj_Ground001
+    3300010: obj_LifeLine
+    3300012: obj_Sun
+    3300014: obj_TotemTree
+    3300016: obj_TreeLeaves
+    3300018: obj_UndergroundEdges
+    3300020: obj_WaterBackground
+    3300022: obj_WaterBottom
+    3300024: obj_WaterSurface
+    3300026: Plane001
+    3300028: Plane002
+    3300030: Plane003
+    3300032: Plane004
+    3300034: Plane005
     4300000: obj_WaterSurface
     4300002: obj_WaterBackground
     4300004: obj_BackgroundImage
@@ -62,6 +98,14 @@ ModelImporter:
     4300016: obj_WaterBottom
     4300018: obj_BackgroundTree
     4300020: obj_UndergroundEdges
+    4300022: obj_LifeLine
+    4300024: obj_Ground001
+    4300026: Plane001
+    4300028: Plane002
+    4300030: Plane003
+    4300032: Plane004
+    4300034: Plane005
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -120,7 +164,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
