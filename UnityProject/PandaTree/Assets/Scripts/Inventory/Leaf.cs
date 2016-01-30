@@ -6,7 +6,7 @@ public class Leaf : NonEdible{
 	// Use this for initialization
     void Start()
     {
-        this.name = "Leaves";
+        this.name = "Leaf";
         this.itemOfferScore = 1;
 	}
 	
