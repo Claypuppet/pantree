@@ -17,13 +17,26 @@ public class GameHandler : MonoBehaviour {
 
     private MainPlayerScript Player { get { return this.player.GetComponent<MainPlayerScript>(); } }
     private PanelInventoryHandler InventoryPanel { get { return this.inventoryPanel.GetComponent<PanelInventoryHandler>(); } }
-    private PanelInventoryHandler SeasonPanel { get { return this.seasonPanel.GetComponent<PanelInventoryHandler>(); } }
+    private PanelSeasonHandler SeasonPanel { get { return this.seasonPanel.GetComponent<PanelSeasonHandler>(); } }
 
 	// Use this for initialization
     void Start() {
         this.currentSeasonCount = 0;
         Season.StartTimer(1000, ChangeSeason);
 	}
+	
+	// Update is called once per frame
+    void Update() {
+
+        // Test inventory
+        if (Input.GetKeyDown("space"))
+            this.UpdateCanvasInventory();
+	}
+    
+	// Application end
+    void OnApplicationQuit() {
+        Season.StopTimer();
+    }
 
     private void ChangeSeason() {
         this.currentSeasonCount++;
@@ -37,19 +50,15 @@ public class GameHandler : MonoBehaviour {
         int seasonDuration = newSeason.GetSeasonDuration() / 10; 
         Season.StartTimer(seasonDuration, ChangeSeason);
     }
-	
-	// Update is called once per frame
-    void Update() {
 
-        // Test inventory
-        if (Input.GetKeyDown("space"))
-            this.updateCanvasInventory();
-	}
-
-    public void updateCanvasInventory() {
+    private void UpdateCanvasInventory() {
         // Add apple to inventory just for testing
         this.Player.AddItemToInventory(new Apple());
 
         this.InventoryPanel.UpdateInventory(this.Player.Inventory);
+    }
+
+    private void UpdateCanvasSeason() {
+        //this.SeasonPanel.UpdateInventory(this.Player.Inventory);
     }
 }

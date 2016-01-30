@@ -25,6 +25,10 @@ public abstract class Season {
         timer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
         timer.Start();
     }
+    public static void StopTimer() {
+        timer.Stop();
+        timer.Dispose();
+    }
 
     private static void OnTimedEvent(object source, ElapsedEventArgs e) {
         timer.Dispose();

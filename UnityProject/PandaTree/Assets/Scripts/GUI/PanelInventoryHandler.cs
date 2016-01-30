@@ -26,6 +26,7 @@ public class PanelInventoryHandler : MonoBehaviour {
     }
 
     private void SetAmountText(string objectName, int amount) {
-        GameObject.Find(objectName).GetComponent<InventoryItemDelegate>().SetText(amount.ToString());
+        UnityEngine.Debug.Log(objectName + " -> " + amount);
+        this.gameObject.GetComponentInChildren<InventoryItemDelegate>().SetText(amount.ToString());
     }
 }

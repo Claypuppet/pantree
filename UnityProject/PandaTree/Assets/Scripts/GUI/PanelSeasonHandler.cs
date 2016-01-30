@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ItemPlace : MonoBehaviour {
-
-    private Item item;
+public class PanelSeasonHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+	
 	}
 	
 	// Update is called once per frame
