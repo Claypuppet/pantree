@@ -14,7 +14,7 @@ public class PanelInventoryHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
+		
 	}
 
     public void UpdateInventory(List<Item> inv) {
