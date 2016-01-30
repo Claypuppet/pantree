@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameHandler : MonoBehaviour {
     public GameObject player;
     public GameObject inventoryPanel;
+    public GameObject seasonPanel;
     private List<Season> seasons = new List<Season>{
             new Winter(),
             new Spring(),
@@ -14,8 +15,9 @@ public class GameHandler : MonoBehaviour {
         };
     private int currentSeasonCount;
 
-    private MainPlayerScript PlayerMain { get { return this.player.GetComponent<MainPlayerScript>(); } }
-    private PanelInventoryHandler InventoryPanelMain { get { return this.inventoryPanel.GetComponent<PanelInventoryHandler>(); } }
+    private MainPlayerScript Player { get { return this.player.GetComponent<MainPlayerScript>(); } }
+    private PanelInventoryHandler InventoryPanel { get { return this.inventoryPanel.GetComponent<PanelInventoryHandler>(); } }
+    private PanelInventoryHandler SeasonPanel { get { return this.seasonPanel.GetComponent<PanelInventoryHandler>(); } }
 
 	// Use this for initialization
     void Start() {
@@ -46,8 +48,8 @@ public class GameHandler : MonoBehaviour {
 
     public void updateCanvasInventory() {
         // Add apple to inventory just for testing
-        this.PlayerMain.AddItemToInventory(new Apple());
+        this.Player.AddItemToInventory(new Apple());
 
-        this.InventoryPanelMain.UpdateInventory(this.PlayerMain.Inventory);
+        this.InventoryPanel.UpdateInventory(this.Player.Inventory);
     }
 }
