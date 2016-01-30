@@ -7,14 +7,14 @@ public class TouchAreaHandler : MonoBehaviour {
     public GameObject thumbStickOuter;
     public GameObject thumbStickInner;
     private bool touchDown = false;
-
+    private Vector2 basePoint;
 
     private ThumbStickHandler ThumbStickOuterHandler { get { return this.thumbStickOuter.GetComponent<ThumbStickHandler>(); } }
     private ThumbStickHandler ThumbStickInnerHandler { get { return this.thumbStickInner.GetComponent<ThumbStickHandler>(); } }
 
 	// Use this for initialization
 	void Start () {
-	    
+        basePoint = new Vector2();
 	}
 	
 	// Update is called once per frame
@@ -45,12 +45,17 @@ public class TouchAreaHandler : MonoBehaviour {
                 // Record first touch down
                 //Debug.Log("NEW START" + touchInput.ToString());
                 this.touchDown = true;
+                this.basePoint = touchInput;
                 this.ShowThumbStick();
                 this.SetOuterThumbStick(touchInput);
             }
             else {
                 // Thumb moving
-                //Debug.Log(touchInput.ToString());
+                float deltaY = touchInput.y - this.basePoint.y;
+                float deltaX = touchInput.x - this.basePoint.x;
+
+                float angleInDegrees = Mathf.Atan2(deltaY, deltaX) * 180 / Mathf.PI;
+                Debug.Log(angleInDegrees);
             }
         }
         else if (touchDown) {
