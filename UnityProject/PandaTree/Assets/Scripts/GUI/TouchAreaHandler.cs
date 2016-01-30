@@ -21,24 +21,32 @@ public class TouchAreaHandler : MonoBehaviour {
 	void Update () {
         Vector2 touchInput;
 
+        // Touch
         if (Input.touchCount > 0) {
             // Get touch position and convert to world position
             touchInput = Camera.main.ScreenToWorldPoint(Input.touches[0].position);
             if (!this.touchDown) {
                 // Record first touch down
                 this.touchDown = true;
+                this.basePoint = touchInput;
+                this.ShowThumbStick();
                 this.SetOuterThumbStick(touchInput);
             }
             else {
                 // Thumb moving
-                Debug.Log(touchInput.ToString());
+                float deltaY = touchInput.y - this.basePoint.y;
+                float deltaX = touchInput.x - this.basePoint.x;
+
+                float angleInDegrees = Mathf.Atan2(deltaY, deltaX) * 180 / Mathf.PI;
+                Debug.Log(angleInDegrees);
             }
         }
         else if (touchDown) {
-            //touchDown = false;
+            touchDown = false;
         }
 
-        // mouse debuggin
+        /*
+        // Mouse
         if (Input.GetMouseButton(0)) {
             touchInput = Camera.main.ScreenToViewportPoint(Input.mousePosition);
             if (!this.touchDown) {
@@ -62,6 +70,7 @@ public class TouchAreaHandler : MonoBehaviour {
             this.HideThumbStick();
             touchDown = false;
         }
+        */
 	}
 
     private void SetOuterThumbStick(Vector2 pos) {

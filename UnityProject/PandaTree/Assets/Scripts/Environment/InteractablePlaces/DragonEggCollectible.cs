@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class CollectibleItem : MonoBehaviour {
-
-    protected Item item;
+public class DragonEggCollectible : CollectibleItem
+{
 
 	// Use this for initialization
-	void Start () {
-
+    void Start() {
+        this.item = new DragonEgg();
 	}
 	
 	// Update is called once per frame

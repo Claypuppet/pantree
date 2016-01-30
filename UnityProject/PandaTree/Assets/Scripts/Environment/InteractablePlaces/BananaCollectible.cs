@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class CollectibleItem : MonoBehaviour {
-
-    protected Item item;
+public class BananaCollectible : CollectibleItem
+{
 
 	// Use this for initialization
-	void Start () {
-
+    void Start() {
+        this.item = new Banana();
 	}
 	
 	// Update is called once per frame
