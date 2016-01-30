@@ -49,7 +49,7 @@ public class MainPlayerScript : MonoBehaviour {
         }
     }
 
-    public void EatFood(Edible food) {
+    public void Eat(Edible food) {
          // Can only eat from storage, so dont need to remove from inventory
         this.lifeEnergy += food.RestoreAmount;
     }
