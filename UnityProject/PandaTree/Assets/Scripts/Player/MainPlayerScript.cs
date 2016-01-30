@@ -8,6 +8,12 @@ public class MainPlayerScript : MonoBehaviour {
     private List<Item> inventory;
     private List<Item> offered;
     private int lifeEnergy;
+    private int score;
+
+    public List<Item> Inventory { get { return this.inventory; } }
+    public List<Item> Offered { get { return this.offered; } }
+    public int LifeEnergy { get { return this.lifeEnergy; } }
+    public int Score { get { return this.score; } }
 
 	// Use this for initialization
 	void Start () {

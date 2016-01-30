@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Inventory\Item.cs" />
      <Compile Include="Assets\Scripts\Inventory\Leaf.cs" />
      <Compile Include="Assets\Scripts\Inventory\NonEdible.cs" />
+     <Compile Include="Assets\Scripts\Inventory\Water.cs" />
      <Compile Include="Assets\Scripts\Player\MainPlayerScript.cs" />
      <Compile Include="Assets\Scripts\Player\MoveScript.cs" />
      <Compile Include="Assets\Scripts\Player\TouchController.cs" />
