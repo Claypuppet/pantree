@@ -33,7 +33,6 @@ public class PlayerController : MonoBehaviour {
     }
     public void AnimatePlayer() {
 		setAnimationRunning ();
-		Debug.Log ("MOIMOI" + anim.GetBool("playerMoving"));
     }
 
 	public void setPlayerDirection(bool right){

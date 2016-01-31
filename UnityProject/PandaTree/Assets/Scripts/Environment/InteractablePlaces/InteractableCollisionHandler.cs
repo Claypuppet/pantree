@@ -27,7 +27,7 @@ public class InteractableCollisionHandler : MonoBehaviour {
             // OK no item!
         }
         try {
-            this.gameObject.GetComponentInParent<TreeRoot>().Interact();
+            this.gameObject.GetComponent<TreeRoot>().Interact();
         }
         catch {
             // OK no tree root either!

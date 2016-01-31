@@ -26,7 +26,7 @@ public class SpawnCollectables : MonoBehaviour
     }
 
     public ItemSpawn newSpawn() {
-        List<ItemSpawn> available = spawnpoints.Where(spawn => spawn.isTaken == false).ToList();
+        List<ItemSpawn> available = spawnpoints.Where(spawn => spawn.isTaken == false).ToList() ;
         if (available.Count <= 0)
             return null;
         ItemSpawn n = available[new System.Random().Next(0, available.Count - 1)];
