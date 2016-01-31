@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour {
 		this.transform.Translate(newPos);
 
         this.gameObject.GetComponent<PlayerController>().AnimatePlayer();
+		//this.gameObject.GetComponent<PlayerController>().setPlayerDirection(directionRight);
 	}
 
 	private Vector3 newPosition(Vector3 curPos, float radians, float speedmodifier){
