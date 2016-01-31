@@ -3,6 +3,8 @@ using System.Collections;
 
 public class InteractableCollisionHandler : MonoBehaviour {
 
+
+
 	// Use this for initialization
 	void Start () {
 	
@@ -14,10 +16,10 @@ public class InteractableCollisionHandler : MonoBehaviour {
 	}
 
     public void Collide() {
-        Debug.Log("YES");
+
     }
 
     public void Action() {
-        //this.gameObject.GetComponentInParent
+        this.gameObject.GetComponentInParent<CollectableItem>().Interact();
     }
 }
