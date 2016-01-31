@@ -15,11 +15,16 @@ public class MainPlayerScript : MonoBehaviour {
     public int LifeEnergy { get { return this.lifeEnergy; } }
     public int Score { get { return this.score; } }
 
+    private Achievement achHungryPanda;
+
 	// Use this for initialization
 	void Start () {
         this.inventory = new List<Item>();
         this.offered = new List<Item>();
-	}
+
+        var manager = GameObject.Find("GameHandler").GetComponent<AchievementManager>();
+        achHungryPanda = manager.GetAchievement("hungry_panda");
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -51,6 +56,15 @@ public class MainPlayerScript : MonoBehaviour {
     }
 
     public void Eat(Edible food) {
+
+        // Handle achieventment
+        if(!achHungryPanda.HasAchieved()) {
+            var goal = achHungryPanda.GetDefinitionValue<int>("goal").Value;
+            var progress = achHungryPanda.GetProgessionValue<int>("count");
+            progress.Value += 1;
+            if(progress.Value >= goal)
+                achHungryPanda.Achieved();
+        }
          // Can only eat from storage, so dont need to remove from inventory
         this.lifeEnergy += food.RestoreAmount;
     }

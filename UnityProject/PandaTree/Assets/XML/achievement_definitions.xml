@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AchievementDefinitions>
 	<AchievementDefinition>
-		<Id>fruit_offerer</Id>
-		<Name>Fruity Panda</Name>
-		<Description>Offer 10 fruits to tree</Description>
+		<Id>hungry_panda</Id>
+		<Name>Hungry Panda</Name>
+		<Description>Eat 10 items</Description>
 		<Icon></Icon>
 		<Secret>false</Secret>
 		<Values>

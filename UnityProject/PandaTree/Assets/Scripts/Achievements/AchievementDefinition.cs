@@ -28,6 +28,8 @@ public class AchievementDefinition {
         public string ValueString { get; set; }
 
         public ValueType GetValue<ValueType>() {
+            if(ValueString == null)
+                return default(ValueType);
             return (ValueType)Convert.ChangeType(ValueString, typeof(ValueType));
         }
 
