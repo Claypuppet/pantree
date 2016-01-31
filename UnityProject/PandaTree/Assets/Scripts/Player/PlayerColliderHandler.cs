@@ -40,6 +40,7 @@ public class PlayerColliderHandler : MonoBehaviour {
 
     public void Action() {
         if (this.isColliding && this.collidingObject != null) {
+            Debug.Log("pickup");
             this.collidingObject.GetComponent<InteractableCollisionHandler>().Action();
         }
     }
