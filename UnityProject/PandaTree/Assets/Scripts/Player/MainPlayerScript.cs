@@ -43,10 +43,11 @@ public class MainPlayerScript : MonoBehaviour {
 
     public void MakeOffer() {
         // Remove all items from inventory and move it to offered
-        for (int i = this.inventory.Count; i >= 0; i--) {
-            this.offered.Add(this.inventory[i]);
-            this.inventory.RemoveAt(i);
+        Debug.Log("count: " + this.inventory.Count);
+        foreach (Item item in this.inventory) {
+            this.offered.Add(item);
         }
+        this.inventory.RemoveRange(0,this.inventory.Count);
     }
 
     public void Eat(Edible food) {

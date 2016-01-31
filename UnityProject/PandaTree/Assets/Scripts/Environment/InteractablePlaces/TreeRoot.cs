@@ -13,7 +13,9 @@ public class TreeRoot : InteractablePlace {
 	
 	}
 
-    public override void interact() {
-
+    public override void Interact() {
+        Debug.Log("MAKE OFFER");
+        this._GameHandler.Player.MakeOffer();
+        this._GameHandler.UpdateCanvasInventory();
     }
 }
