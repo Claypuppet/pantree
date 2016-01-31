@@ -4,10 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 
 public class PlayerController : MonoBehaviour {
-
-    Vector3 position;
-    Transform myTrans;
-
+ 
 	Animator anim;
 
     // Use this for initialization
@@ -49,6 +46,9 @@ public class PlayerController : MonoBehaviour {
             myTrans.Translate(moveHorizontal * MoveSpeed * DeltaTime, 0, 0);
         }
         */
+    }
+    public void AnimatePlayer() {
+
     }
 
 }
