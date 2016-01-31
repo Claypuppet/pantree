@@ -6,13 +6,13 @@ public class TouchAreaHandler : MonoBehaviour {
 
     public GameObject thumbStickOuter;
     public GameObject thumbStickInner;
-    public GameObject playerObject;
+    public GameObject gameHandler;
     private bool touchDown = false;
     private Vector2 basePoint;
 
     private ThumbStickHandler ThumbStickOuterHandler { get { return this.thumbStickOuter.GetComponent<ThumbStickHandler>(); } }
     private ThumbStickHandler ThumbStickInnerHandler { get { return this.thumbStickInner.GetComponent<ThumbStickHandler>(); } }
-    private PlayerMovement PlayerMovementHandler { get { return this.playerObject.GetComponent<PlayerMovement>(); } }
+    private GameHandler _GameHandler { get { return this.gameHandler.GetComponent<GameHandler>(); } }
 
 	// Use this for initialization
 	void Start () {
@@ -57,17 +57,18 @@ public class TouchAreaHandler : MonoBehaviour {
                 //Debug.Log("NEW START" + touchInput.ToString());
                 this.touchDown = true;
                 this.basePoint = touchInput;
-                this.SetOuterThumbStick(touchInput);
             }
             else {
-                if(this.ThumbStickOuterHandler.isActiveAndEnabled)
+                if (!this.ThumbStickOuterHandler.isActiveAndEnabled && touchInput != this.basePoint) {
                     this.ShowThumbStick();
+                    this.SetOuterThumbStick(touchInput);
+                }
                 // Thumb moving
                 float deltaY = touchInput.y - this.basePoint.y;
                 float deltaX = touchInput.x - this.basePoint.x;
 
-                float angleInRadius = Mathf.Atan2(deltaY, deltaX);
-                Debug.Log(angleInRadius);
+                float rad = Mathf.Atan2(deltaY, deltaX);
+                _GameHandler.MovePlayer(rad);
             }
         }
         else if (touchDown) {
