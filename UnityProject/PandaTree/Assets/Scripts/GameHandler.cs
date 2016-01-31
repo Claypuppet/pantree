@@ -15,7 +15,7 @@ public class GameHandler : MonoBehaviour {
         };
     private int currentSeasonCount;
 
-    private MainPlayerScript Player { get { return this.player.GetComponent<MainPlayerScript>(); } }
+    public MainPlayerScript Player { get { return this.player.GetComponent<MainPlayerScript>(); } }
     private PlayerMovement PlayerMovement { get { return this.player.GetComponent<PlayerMovement>(); } }
     private PanelInventoryHandler InventoryPanel { get { return this.inventoryPanel.GetComponent<PanelInventoryHandler>(); } }
     private PanelSeasonHandler SeasonPanel { get { return this.seasonPanel.GetComponent<PanelSeasonHandler>(); } }
@@ -52,10 +52,7 @@ public class GameHandler : MonoBehaviour {
         Season.StartTimer(seasonDuration, ChangeSeason);
     }
 
-    private void UpdateCanvasInventory() {
-        // Add apple to inventory just for testing
-        this.Player.AddItemToInventory(new Apple());
-
+    public void UpdateCanvasInventory() {
         this.InventoryPanel.UpdateInventory(this.Player.Inventory);
     }
 
