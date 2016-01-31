@@ -5,8 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class GameHandler : MonoBehaviour {
+public class GameHandler : MonoBehaviour
+{
     public GameObject player;
+    public GameObject playerCollider;
     public GameObject inventoryPanel;
     public GameObject seasonPanel;
     public GameObject spawnHandler;
@@ -22,6 +24,7 @@ public class GameHandler : MonoBehaviour {
 
     public MainPlayerScript Player { get { return this.player.GetComponent<MainPlayerScript>(); } }
     private PlayerMovement PlayerMovement { get { return this.player.GetComponent<PlayerMovement>(); } }
+    private PlayerColliderHandler PlayerCollider { get { return this.playerCollider.GetComponent<PlayerColliderHandler>(); } }
     private PanelInventoryHandler InventoryPanel { get { return this.inventoryPanel.GetComponent<PanelInventoryHandler>(); } }
     private PanelSeasonHandler SeasonPanel { get { return this.seasonPanel.GetComponent<PanelSeasonHandler>(); } }
     private SpawnCollectables SpawnHandler { get { return this.spawnHandler.GetComponent<SpawnCollectables>(); } }
@@ -39,10 +42,9 @@ public class GameHandler : MonoBehaviour {
 
         // Test inventory
         if (Input.GetKeyDown("space"))
-            this.TimeToCreateItem();
+            this.DoAction();
 
         if (newSpawnReady) {
-            Debug.Log("create");
             newSpawnReady = false;
             this.CreateItem();
         }
@@ -68,7 +70,6 @@ public class GameHandler : MonoBehaviour {
     }
 
     public void TimeToCreateItem() {
-        Debug.Log("lol");
         this.newSpawnReady = true;
     }
 
@@ -101,4 +102,8 @@ public class GameHandler : MonoBehaviour {
 	public void initMusic(){
 		//Camera.main.
 	}
+
+    public void DoAction() {
+        this.PlayerCollider.Action();
+    }
 }
