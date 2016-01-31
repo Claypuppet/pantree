@@ -29,11 +29,11 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-		setAnimationIdle ();
+		//setAnimationIdle ();
     }
     public void AnimatePlayer() {
-		
 		setAnimationRunning ();
+		Debug.Log ("MOIMOI" + anim.GetBool("playerMoving"));
     }
 
 }
