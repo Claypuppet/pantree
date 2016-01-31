@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 55c1e088b73d55d439016ed94e528477
+timeCreated: 1454239663
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: obj_BGBushes
+    100004: obj_ChakraLine01
+    100006: obj_ChakraLine02
+    100008: obj_ChakraLine03
+    100010: obj_ChakraLine04
+    100012: obj_ChakraLine05
+    100014: obj_ChakraLine06
+    100016: obj_Fog01
+    100018: obj_Fog02
+    100020: obj_Forest01
+    100022: obj_Forest02
+    100024: obj_Grass
+    100026: obj_Mountains
+    100028: Obj_Sky
+    100030: obj_TotemTree
+    100032: obj_Underground
+    400000: //RootNode
+    400002: obj_BGBushes
+    400004: obj_ChakraLine01
+    400006: obj_ChakraLine02
+    400008: obj_ChakraLine03
+    400010: obj_ChakraLine04
+    400012: obj_ChakraLine05
+    400014: obj_ChakraLine06
+    400016: obj_Fog01
+    400018: obj_Fog02
+    400020: obj_Forest01
+    400022: obj_Forest02
+    400024: obj_Grass
+    400026: obj_Mountains
+    400028: Obj_Sky
+    400030: obj_TotemTree
+    400032: obj_Underground
+    2300000: obj_BGBushes
+    2300002: obj_ChakraLine01
+    2300004: obj_ChakraLine02
+    2300006: obj_ChakraLine03
+    2300008: obj_ChakraLine04
+    2300010: obj_ChakraLine05
+    2300012: obj_ChakraLine06
+    2300014: obj_Fog01
+    2300016: obj_Fog02
+    2300018: obj_Forest01
+    2300020: obj_Forest02
+    2300022: obj_Grass
+    2300024: obj_Mountains
+    2300026: Obj_Sky
+    2300028: obj_TotemTree
+    2300030: obj_Underground
+    3300000: obj_BGBushes
+    3300002: obj_ChakraLine01
+    3300004: obj_ChakraLine02
+    3300006: obj_ChakraLine03
+    3300008: obj_ChakraLine04
+    3300010: obj_ChakraLine05
+    3300012: obj_ChakraLine06
+    3300014: obj_Fog01
+    3300016: obj_Fog02
+    3300018: obj_Forest01
+    3300020: obj_Forest02
+    3300022: obj_Grass
+    3300024: obj_Mountains
+    3300026: Obj_Sky
+    3300028: obj_TotemTree
+    3300030: obj_Underground
+    4300000: Obj_Sky
+    4300002: obj_Fog01
+    4300004: obj_Mountains
+    4300006: obj_Underground
+    4300008: obj_Forest01
+    4300010: obj_Fog02
+    4300012: obj_Forest02
+    4300014: obj_TotemTree
+    4300016: obj_ChakraLine01
+    4300018: obj_ChakraLine03
+    4300020: obj_ChakraLine05
+    4300022: obj_ChakraLine04
+    4300024: obj_ChakraLine02
+    4300026: obj_ChakraLine06
+    4300028: obj_Grass
+    4300030: obj_BGBushes
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
