@@ -66,4 +66,8 @@ public class GameHandler : MonoBehaviour {
     public void MovePlayer(float rad) {
         this.PlayerMovement.MovePlayer(rad, 1);
     }
+		
+	public void resetScene(){
+		
+	}
 }
