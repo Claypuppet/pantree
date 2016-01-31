@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour {
 		Vector3 curPos = this.transform.position;
         Vector3 newPos = newPosition(curPos, radians, speedModifier);
 		this.transform.Translate(newPos);
+
+        this.gameObject.GetComponent<PlayerController>().AnimatePlayer();
 	}
 
 	private Vector3 newPosition(Vector3 curPos, float radians, float speedmodifier){

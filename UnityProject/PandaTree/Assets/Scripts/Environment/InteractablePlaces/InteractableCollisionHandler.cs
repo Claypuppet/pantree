@@ -14,7 +14,7 @@ public class InteractableCollisionHandler : MonoBehaviour {
 	}
 
     public void Collide() {
-
+        Debug.Log("YES");
     }
 
     public void Action() {
