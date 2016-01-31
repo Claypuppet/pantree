@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerColliderHandler : MonoBehaviour {
 
-    private GameObject collidingObject;
+    private GameObject collidingObject = null;
     private bool isColliding;
 
 	// Use this for initialization
@@ -17,13 +17,13 @@ public class PlayerColliderHandler : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider col) {
+        if (this.collidingObject != null)
+            return;
         try {
             InteractableCollisionHandler handler = col.gameObject.GetComponent<InteractableCollisionHandler>();
-            Debug.Log("collision!");
+            handler.Collide();
             this.collidingObject = col.gameObject;
             this.isColliding = true;
-            handler.Collide();
-            this.Action();
         }
         catch {
             // no collision handler
@@ -31,7 +31,7 @@ public class PlayerColliderHandler : MonoBehaviour {
     }
 
     void OnTriggerExit(Collider col) {
-        if (isColliding) {
+        if (this.isColliding && this.collidingObject != null) {
             Debug.Log("no more collision!");
             this.collidingObject = null;
             this.isColliding = false;
@@ -40,8 +40,12 @@ public class PlayerColliderHandler : MonoBehaviour {
 
     public void Action() {
         if (this.isColliding && this.collidingObject != null) {
-            Debug.Log("pickup");
-            this.collidingObject.GetComponent<InteractableCollisionHandler>().Action();
+            try {
+                this.collidingObject.GetComponent<InteractableCollisionHandler>().Action();
+            }
+            catch {
+
+            }
         }
     }
 }
