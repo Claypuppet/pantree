@@ -7,7 +7,7 @@
 		<Icon></Icon>
 		<Secret>false</Secret>
 		<Values>
-			<Value id="goal">10</Value>
+			<Value Id="goal">10</Value>
 		</Values>
 	</AchievementDefinition>
 </AchievementDefinitions>

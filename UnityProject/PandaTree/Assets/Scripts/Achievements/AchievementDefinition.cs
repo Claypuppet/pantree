@@ -20,8 +20,9 @@ public class AchievementDefinition {
     [XmlElement("Secret")]
     public bool Secret { get; set; }
 
+    [XmlRoot("Value")]
     public class Value {
-        [XmlAttribute("id")]
+        [XmlAttribute("Id")]
         public string Id { get; set; }
         [XmlText]
         public string ValueString { get; set; }
@@ -35,7 +36,8 @@ public class AchievementDefinition {
         }
     }
 
-    [XmlElement("Values")]
+    [XmlArray("Values")]
+    [XmlArrayItem("Value")]
     public List<Value> Values { get; set; }
 }
 

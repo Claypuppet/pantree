@@ -28,8 +28,8 @@ public class Achievement {
             }
             set {
                 var old = mValue.ValueString;
-                mValue.SetValue<T>(Value);
-                if(!old.Equals(mValue.ValueString)) {
+                mValue.SetValue<T>(value);
+                if(old == null || !old.Equals(mValue.ValueString)) {
                     mAchievement.mManager.OnProgressed(mAchievement, mAchievement.mProgress, mValue);
                 }
             }
@@ -46,7 +46,7 @@ public class Achievement {
     public ValueT<T> GetDefinitionValue<T>(string id) {
         if(mDefinition.Values != null) {
             var q = from v in mDefinition.Values
-                    where v.Id == id
+                    where v.Id != null && v.Id.Equals(id)
                     select v;
             AchievementDefinition.Value value = q.First();
             if(value != null)
@@ -63,11 +63,10 @@ public class Achievement {
     }
 
     public ValueT<T> GetProgessionValue<T>(string id, bool createIfNotExist=true) {
-
         AchievementDefinition.Value value = null;
         if(mProgress.Values != null) {
             var q = from v in mProgress.Values
-                    where v.Id != null && v.Id == id
+                    where v.Id != null && v.Id.Equals(id)
                     select v;
             value = q.First();
         }
@@ -77,6 +76,8 @@ public class Achievement {
             if(id.Length > 0) {
                 value = new AchievementDefinition.Value();
                 value.Id = id;
+                if(mProgress.Values == null)
+                    mProgress.Values = new List<AchievementDefinition.Value>();
                 mProgress.Values.Add(value);
             }
         }

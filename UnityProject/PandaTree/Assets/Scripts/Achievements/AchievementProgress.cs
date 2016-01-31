@@ -13,6 +13,7 @@ public class AchievementProgress {
     [XmlElement("Id")]
     public string Id { get; set; }
 
+    [XmlRoot("Achieved")]
     public class _Achieved {
         [XmlAttribute("didPopup")]
         public bool didPopup { get; set; }
@@ -23,7 +24,8 @@ public class AchievementProgress {
     [XmlElement("Achieved")]
     public _Achieved Achieved { get; set; }
 
-    [XmlElement("Values")]
+    [XmlArray("Values")]
+    [XmlArrayItem("Value")]
     public List<AchievementDefinition.Value> Values { get; set; }
 }
 

@@ -39,8 +39,10 @@ public class AchievementManager : MonoBehaviour {
         // Load progress from XML file.
         LoadProgressions();
 
-        if(achievementTextElement == null)
-            achievementTextElement = GameObject.Find("AchievementText");
+        // Get by name if it wasn't bound.
+        achievementTextElement = achievementTextElement ?? GameObject.Find("AchievementText");
+            
+        // Object is inactive by default.
         if(achievementTextElement != null)
             achievementTextElement.SetActive(false);
     }
@@ -115,6 +117,9 @@ public class AchievementManager : MonoBehaviour {
 
     void SaveProgress() {
         var path = Application.persistentDataPath + "/" + PROGRESSIONS_FILE;
+
+        Debug.Log(string.Format("Saving to file: {0}", path));
+
         var serializer = new XmlSerializer(typeof(AchievementProgressions));
 
         AchievementProgressions progressions = new AchievementProgressions();
@@ -126,7 +131,7 @@ public class AchievementManager : MonoBehaviour {
         progressions.Progressions = query.ToList();
 
         if(progressions.Progressions.Count > 0) {
-            using(var stream = new FileStream(path, FileMode.CreateNew)) {
+            using(var stream = new FileStream(path, FileMode.Create)) {
                 serializer.Serialize(stream, progressions);
             }
         }
@@ -136,11 +141,15 @@ public class AchievementManager : MonoBehaviour {
 
     public void OnProgressed(Achievement achievement, AchievementProgress progress, AchievementDefinition.Value value) {
         mSaveRequired = true;
+
+        Debug.Log(string.Format("Progressed: {0}", achievement.Name));
     }
 
     public void OnAchieved(Achievement achievement, AchievementProgress progress) {
         mAchievedList.AddLast(achievement);
         mSaveRequired = true;
+
+        Debug.Log(string.Format("Achieved: {0}", achievement.Name));
     }
 
     public Achievement GetAchievement(string id) {
