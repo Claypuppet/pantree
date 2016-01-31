@@ -36,4 +36,12 @@ public class PlayerController : MonoBehaviour {
 		Debug.Log ("MOIMOI" + anim.GetBool("playerMoving"));
     }
 
+	public void setPlayerDirection(bool right){
+		if (right) {
+			
+		} else {
+			
+		}
+	}
+
 }

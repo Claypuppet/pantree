@@ -80,6 +80,7 @@ public class TouchAreaHandler : MonoBehaviour {
         else if (touchDown) {
             this.HideThumbStick();
             touchDown = false;
+			_GameHandler.player.GetComponent<PlayerController> ().setAnimationIdle ();
         }
 	}
 
