@@ -14,6 +14,10 @@ public class InteractableCollisionHandler : MonoBehaviour {
 	}
 
     public void Collide() {
-        Debug.Log("collision!");
+
+    }
+
+    public void Action() {
+        //this.gameObject.GetComponentInParent
     }
 }

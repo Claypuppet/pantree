@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour {
 
     public float MoveSpeed = 5f;
 
+    private GameObject collidingObject;
+    private bool isColliding;
+
     Vector3 position;
     Transform myTrans;
 
@@ -36,4 +39,24 @@ public class PlayerController : MonoBehaviour {
         }
         */
     }
+
+    void OnCollisionEnter(Collision col) {
+        Debug.Log("collision!");
+        this.collidingObject = col.gameObject;
+        this.collidingObject.GetComponent<InteractableCollisionHandler>().Collide();
+        this.isColliding = true;
+    }
+
+    void onCollisionExit(Collision col) {
+        Debug.Log("no more collision!");
+        this.collidingObject = null;
+        this.isColliding = false;
+    }
+
+    public void Action() {
+        if (this.isColliding && this.collidingObject != null) {
+            this.collidingObject.GetComponent<InteractableCollisionHandler>().Action();
+        }
+    }
+
 }
