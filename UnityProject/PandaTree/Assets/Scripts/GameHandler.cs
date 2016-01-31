@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour {
     public GameObject player;
@@ -48,6 +49,8 @@ public class GameHandler : MonoBehaviour {
         // 
         //
 
+		reloadGameLevel ();
+
         int seasonDuration = newSeason.GetSeasonDuration() / 10; 
         Season.StartTimer(seasonDuration, ChangeSeason);
     }
@@ -67,7 +70,7 @@ public class GameHandler : MonoBehaviour {
         this.PlayerMovement.MovePlayer(rad, 1);
     }
 		
-	public void resetScene(){
-		
+	public void reloadGameLevel(){
+		//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 }
