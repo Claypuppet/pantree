@@ -7,6 +7,9 @@ public class CollectableItem : InteractablePlace
 
 	// Use this for initialization
 	void Start () {
+
+        this.gameHandler = GameObject.Find("GameHandler");
+
         switch (this.gameObject.name) {
             case "Apple":
                 this.item = new Apple();
