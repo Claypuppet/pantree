@@ -70,4 +70,8 @@ public class GameHandler : MonoBehaviour {
 	public void reloadGameLevel(){
 		//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
+
+	public void initMusic(){
+		
+	}
 }
