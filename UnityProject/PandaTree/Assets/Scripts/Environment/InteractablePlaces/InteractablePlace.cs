@@ -8,7 +8,7 @@ public abstract class InteractablePlace : MonoBehaviour {
     protected GameHandler _GameHandler { get { return this.gameHandler.GetComponent<GameHandler>(); } }
 
     // can be interacted with
-    public virtual void interact() {
+    public virtual void Interact() {
         
     }
 }
