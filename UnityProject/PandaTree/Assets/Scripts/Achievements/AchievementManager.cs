@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
@@ -12,11 +13,22 @@ public class AchievementManager : MonoBehaviour {
     public static string PROGRESSIONS_FILE = "achievement_progressions.xml";
     protected Dictionary<string, AchievementDefinition> mAchievementDefinitions = new Dictionary<string, AchievementDefinition>();
     protected Dictionary<string, AchievementProgress> mAchievementProgressions = new Dictionary<string, AchievementProgress>();
+    protected Dictionary<string, Achievement> mAchievements = new Dictionary<string, Achievement>();
+    protected LinkedList<Achievement> mAchievedList = new LinkedList<Achievement>();
 
     public TextAsset definitions;
 
-    private float lastSaveTime = 0;
-    private bool saveRequired = false;
+    private float mLastSaveTime = 0;
+    private bool mSaveRequired = false;
+
+    public GameObject achievementTextElement;
+    private float mOnScreenTime = 0;
+    private bool mOnScreenFadeStarted = false;
+    protected Achievement mOnScreen = null;
+
+    public AudioSource audioSource;
+    public AudioClip achievedSound;
+
 
     // Use this for initialization
     void Start () {
@@ -26,16 +38,52 @@ public class AchievementManager : MonoBehaviour {
 
         // Load progress from XML file.
         LoadProgressions();
+
+        if(achievementTextElement == null)
+            achievementTextElement = GameObject.Find("AchievementText");
+        if(achievementTextElement != null)
+            achievementTextElement.SetActive(false);
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if(saveRequired && (Time.time - lastSaveTime) >= 10)
+        // Saving should probably go in another thread....
+        if(mSaveRequired && (Time.time - mLastSaveTime) >= 15)
             SaveProgress();
+
+        if(mOnScreen != null) {
+            var text = achievementTextElement.GetComponent<Text>();
+            if(!mOnScreenFadeStarted) {
+                if(Time.time - mOnScreenTime >= 5) {
+                    mOnScreenFadeStarted = true;
+                    text.CrossFadeAlpha(0, 0.5f, false);
+                }
+            }
+            else if(text.canvasRenderer.GetColor().a < 0.001f) {
+                mOnScreen = null;
+                mOnScreenTime = Time.time;
+                achievementTextElement.SetActive(false);
+            }
+        }
+
+        // Need to show achieved text?
+        if(mOnScreen == null && mAchievedList.Count > 0 && Time.time - mOnScreenTime >= 1) {
+            mOnScreen = mAchievedList.First();
+            mAchievedList.RemoveFirst();
+            mOnScreenTime = Time.time;
+            mOnScreenFadeStarted = false;
+
+            var text = achievementTextElement.GetComponent<Text>();
+            text.text = string.Format("Achieved!\n\n{0}\n{1}", mOnScreen.Name, mOnScreen.Description);
+            achievementTextElement.SetActive(true);
+
+            if(audioSource && achievedSound)
+                audioSource.PlayOneShot(achievedSound);
+        }
 	}
 
     void OnApplicationQuit() {
-        if(saveRequired)
+        if(mSaveRequired)
             SaveProgress();
     }
 
@@ -83,14 +131,36 @@ public class AchievementManager : MonoBehaviour {
             }
         }
 
-        saveRequired = false;
+        mSaveRequired = false;
     }
 
     public void OnProgressed(Achievement achievement, AchievementProgress progress, AchievementDefinition.Value value) {
-        saveRequired = true;
+        mSaveRequired = true;
     }
 
     public void OnAchieved(Achievement achievement, AchievementProgress progress) {
-        saveRequired = true;
+        mAchievedList.AddLast(achievement);
+        mSaveRequired = true;
+    }
+
+    public Achievement GetAchievement(string id) {
+        Achievement result;
+        if(mAchievements.TryGetValue(id, out result))
+            return result;
+
+        AchievementDefinition def;
+        if(mAchievementDefinitions.TryGetValue(id, out def)) {
+            AchievementProgress progress;
+            if(!mAchievementProgressions.TryGetValue(id, out progress)) {
+                progress = new AchievementProgress();
+                progress.Id = def.Id;
+                mAchievementProgressions.Add(id, progress);
+            }
+
+            result = new Achievement(this, def, progress);
+            if(result != null)
+                mAchievements.Add(id, result);
+        }
+        return result;
     }
 }
