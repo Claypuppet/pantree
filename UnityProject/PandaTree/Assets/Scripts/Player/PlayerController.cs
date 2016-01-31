@@ -38,7 +38,8 @@ public class PlayerController : MonoBehaviour {
 
 	public void setPlayerDirection(bool right){
 		if (right) {
-			
+			//GameObject.Find ("prefab_MainCharacter").transform.;
+
 		} else {
 			
 		}
