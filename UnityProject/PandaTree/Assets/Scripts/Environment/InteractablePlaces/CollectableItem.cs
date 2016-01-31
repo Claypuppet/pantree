@@ -3,7 +3,6 @@ using System.Collections;
 
 public abstract class CollectableItem : InteractablePlace
 {
-
     protected Item item;
 
 	// Use this for initialization
@@ -18,5 +17,8 @@ public abstract class CollectableItem : InteractablePlace
 
     public override void interact() {
         // Add item to player inventory
+        _GameHandler.Player.AddItemToInventory(this.item);
+        _GameHandler.UpdateCanvasInventory();
+        Destroy(this.gameObject);
     }
 }

@@ -13,6 +13,7 @@ public class TouchAreaHandler : MonoBehaviour {
 
     private ThumbStickHandler ThumbStickOuterHandler { get { return this.thumbStickOuter.GetComponent<ThumbStickHandler>(); } }
     private ThumbStickHandler ThumbStickInnerHandler { get { return this.thumbStickInner.GetComponent<ThumbStickHandler>(); } }
+    private RectTransform ThumbStickArrow { get { return this.thumbStickArrow.GetComponent<RectTransform>(); } }
     private GameHandler _GameHandler { get { return this.gameHandler.GetComponent<GameHandler>(); } }
 
 	// Use this for initialization
@@ -64,12 +65,16 @@ public class TouchAreaHandler : MonoBehaviour {
                     this.ShowThumbStick();
                     this.SetOuterThumbStick(touchInput);
                 }
+                if (touchInput == this.basePoint)
+                    return;
+
                 // Thumb moving
                 float deltaY = touchInput.y - this.basePoint.y;
                 float deltaX = touchInput.x - this.basePoint.x;
 
                 float rad = Mathf.Atan2(deltaY, deltaX);
                 _GameHandler.MovePlayer(rad);
+                this.RepositionThumbArrow(rad);
             }
         }
         else if (touchDown) {
@@ -93,6 +98,9 @@ public class TouchAreaHandler : MonoBehaviour {
     }
 
     private void RepositionThumbArrow(float rad) {
-
+        // TODO later
+        
+        // (this.ThumbStickArrow.position, this. rad)
+        //this.ThumbStickArrow.localRotation.x = Mathf.Sin(rad);
     }
 }
