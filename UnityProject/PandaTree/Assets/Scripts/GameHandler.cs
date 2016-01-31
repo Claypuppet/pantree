@@ -49,8 +49,6 @@ public class GameHandler : MonoBehaviour {
         // 
         //
 
-		reloadGameLevel ();
-
         int seasonDuration = newSeason.GetSeasonDuration() / 10; 
         Season.StartTimer(seasonDuration, ChangeSeason);
     }
@@ -72,6 +70,6 @@ public class GameHandler : MonoBehaviour {
 	}
 
 	public void initMusic(){
-		
+		//Camera.main.
 	}
 }
