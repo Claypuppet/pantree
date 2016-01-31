@@ -26,7 +26,8 @@ public abstract class Season {
         timer.Start();
     }
     public static void StopTimer() {
-        timer.Stop();
+        if(timer.Enabled)
+            timer.Stop();
         timer.Dispose();
     }
 

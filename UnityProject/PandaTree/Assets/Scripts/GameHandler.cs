@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour {
     public GameObject player;
@@ -15,7 +16,8 @@ public class GameHandler : MonoBehaviour {
         };
     private int currentSeasonCount;
 
-    private MainPlayerScript Player { get { return this.player.GetComponent<MainPlayerScript>(); } }
+    public MainPlayerScript Player { get { return this.player.GetComponent<MainPlayerScript>(); } }
+    private PlayerMovement PlayerMovement { get { return this.player.GetComponent<PlayerMovement>(); } }
     private PanelInventoryHandler InventoryPanel { get { return this.inventoryPanel.GetComponent<PanelInventoryHandler>(); } }
     private PanelSeasonHandler SeasonPanel { get { return this.seasonPanel.GetComponent<PanelSeasonHandler>(); } }
 
@@ -47,18 +49,29 @@ public class GameHandler : MonoBehaviour {
         // 
         //
 
+		reloadGameLevel ();
+
         int seasonDuration = newSeason.GetSeasonDuration() / 10; 
         Season.StartTimer(seasonDuration, ChangeSeason);
     }
 
-    private void UpdateCanvasInventory() {
-        // Add apple to inventory just for testing
-        this.Player.AddItemToInventory(new Apple());
-
+    public void UpdateCanvasInventory() {
         this.InventoryPanel.UpdateInventory(this.Player.Inventory);
     }
 
     private void UpdateCanvasSeason() {
         //this.SeasonPanel.UpdateInventory(this.Player.Inventory);
     }
+
+    public void MovePlayer(float rad) {
+        this.PlayerMovement.MovePlayer(rad, 1);
+    }
+		
+	public void reloadGameLevel(){
+		//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	}
+
+	public void initMusic(){
+		
+	}
 }

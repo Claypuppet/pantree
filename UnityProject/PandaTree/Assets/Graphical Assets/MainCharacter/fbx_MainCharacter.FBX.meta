@@ -1,15 +1,70 @@
 fileFormatVersion: 2
-guid: 20954bd05ad4dfe4dbf1c32cf0168807
-timeCreated: 1454099883
+guid: d9f5228f77b98124aa8212986d9c300e
+timeCreated: 1454187577
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: obj_MainCharacter
+    100000: Bone_Head01
+    100002: Bone_Hip01
+    100004: Bone_L_Collar01
+    100006: Bone_L_Ear01
+    100008: Bone_L_Foot01
+    100010: Bone_L_Forearm01
+    100012: Bone_L_Hand01
+    100014: Bone_L_Leg01
+    100016: Bone_L_Shoulder01
+    100018: Bone_L_Thigh01
+    100020: Bone_Neck01
+    100022: Bone_R_Collar01
+    100024: Bone_R_Ear01
+    100026: Bone_R_Foot01
+    100028: Bone_R_Forearm01
+    100030: Bone_R_Hand01
+    100032: Bone_R_Leg01
+    100034: Bone_R_Shoulder01
+    100036: Bone_R_Thigh01
+    100038: Bone_Spine01
+    100040: Bone_Spine02
+    100042: Bone_Stomach01
+    100044: Bone_Tail01
+    100046: //RootNode
+    100048: obj_MainCharacterMediumPoly
+    400000: Bone_Head01
+    400002: Bone_Hip01
+    400004: Bone_L_Collar01
+    400006: Bone_L_Ear01
+    400008: Bone_L_Foot01
+    400010: Bone_L_Forearm01
+    400012: Bone_L_Hand01
+    400014: Bone_L_Leg01
+    400016: Bone_L_Shoulder01
+    400018: Bone_L_Thigh01
+    400020: Bone_Neck01
+    400022: Bone_R_Collar01
+    400024: Bone_R_Ear01
+    400026: Bone_R_Foot01
+    400028: Bone_R_Forearm01
+    400030: Bone_R_Hand01
+    400032: Bone_R_Leg01
+    400034: Bone_R_Shoulder01
+    400036: Bone_R_Thigh01
+    400038: Bone_Spine01
+    400040: Bone_Spine02
+    400042: Bone_Stomach01
+    400044: Bone_Tail01
+    400046: //RootNode
+    400048: obj_MainCharacterMediumPoly
+    4300000: obj_MainCharacterMediumPoly
+    7400000: IdleLookAroundLoop
+    7400002: ClimbLoop
+    7400004: TurningAroundStepping
+    7400006: PickingUp
+    7400008: Posing
+    7400010: IdleCalm
+    7400012: RunLoop
+    9500000: //RootNode
+    13700000: obj_MainCharacterMediumPoly
   materials:
     importMaterials: 1
     materialName: 0
@@ -30,7 +85,553 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: IdleLookAroundLoop
+      takeName: IdleLookAroundLoop
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_Hip01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01/Bone_L_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01/Bone_R_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01/Bone_L_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_L_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_R_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01/Bone_R_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Stomach01
+        weight: 1
+      - path: Bone_Hip01/Bone_Tail01
+        weight: 1
+      - path: obj_MainCharacterMediumPoly
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ClimbLoop
+      takeName: ClimbLoop
+      firstFrame: 75
+      lastFrame: 95
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_Hip01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01/Bone_L_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01/Bone_R_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01/Bone_L_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_L_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_R_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01/Bone_R_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Stomach01
+        weight: 1
+      - path: Bone_Hip01/Bone_Tail01
+        weight: 1
+      - path: obj_MainCharacterMediumPoly
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TurningAroundStepping
+      takeName: TurningAroundStepping
+      firstFrame: 100
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_Hip01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01/Bone_L_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01/Bone_R_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01/Bone_L_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_L_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_R_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01/Bone_R_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Stomach01
+        weight: 1
+      - path: Bone_Hip01/Bone_Tail01
+        weight: 1
+      - path: obj_MainCharacterMediumPoly
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PickingUp
+      takeName: PickingUp
+      firstFrame: 120
+      lastFrame: 135
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_Hip01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01/Bone_L_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01/Bone_R_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01/Bone_L_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_L_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_R_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01/Bone_R_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Stomach01
+        weight: 1
+      - path: Bone_Hip01/Bone_Tail01
+        weight: 1
+      - path: obj_MainCharacterMediumPoly
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Posing
+      takeName: Posing
+      firstFrame: 140
+      lastFrame: 185
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_Hip01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01/Bone_L_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01/Bone_R_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01/Bone_L_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_L_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_R_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01/Bone_R_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Stomach01
+        weight: 1
+      - path: Bone_Hip01/Bone_Tail01
+        weight: 1
+      - path: obj_MainCharacterMediumPoly
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: IdleCalm
+      takeName: IdleCalm
+      firstFrame: 190
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_Hip01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01/Bone_L_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01/Bone_R_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01/Bone_L_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_L_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_R_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01/Bone_R_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Stomach01
+        weight: 1
+      - path: Bone_Hip01/Bone_Tail01
+        weight: 1
+      - path: obj_MainCharacterMediumPoly
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 190
+    - serializedVersion: 16
+      name: RunLoop
+      takeName: RunLoop
+      firstFrame: 36
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_Hip01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_L_Thigh01/Bone_L_Leg01/Bone_L_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01
+        weight: 1
+      - path: Bone_Hip01/Bone_R_Thigh01/Bone_R_Leg01/Bone_R_Foot01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_L_Collar01/Bone_L_Shoulder01/Bone_L_Forearm01/Bone_L_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_L_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_Neck01/Bone_Head01/Bone_R_Ear01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01
+        weight: 1
+      - path: Bone_Hip01/Bone_Spine01/Bone_Spine02/Bone_R_Collar01/Bone_R_Shoulder01/Bone_R_Forearm01/Bone_R_Hand01
+        weight: 1
+      - path: Bone_Hip01/Bone_Stomach01
+        weight: 1
+      - path: Bone_Hip01/Bone_Tail01
+        weight: 1
+      - path: obj_MainCharacterMediumPoly
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 36
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -68,7 +669,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
