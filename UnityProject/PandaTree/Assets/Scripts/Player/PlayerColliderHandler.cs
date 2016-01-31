@@ -16,18 +16,26 @@ public class PlayerColliderHandler : MonoBehaviour {
 
     }
 
-    void OnCollisionEnter(Collision col) {
-        Debug.Log("collision!");
-        col.gameObject.GetComponent<InteractableCollisionHandler>();
-        this.collidingObject = col.gameObject;
-        this.isColliding = true;
-        col.gameObject.SetActive(false);
+    void OnTriggerEnter(Collider col) {
+        try {
+            InteractableCollisionHandler handler = col.gameObject.GetComponent<InteractableCollisionHandler>();
+            Debug.Log("collision!");
+            this.collidingObject = col.gameObject;
+            this.isColliding = true;
+            handler.Collide();
+            this.Action();
+        }
+        catch {
+            // no collision handler
+        }
     }
 
-    void onCollisionExit(Collision col) {
-        Debug.Log("no more collision!");
-        this.collidingObject = null;
-        this.isColliding = false;
+    void OnTriggerExit(Collider col) {
+        if (isColliding) {
+            Debug.Log("no more collision!");
+            this.collidingObject = null;
+            this.isColliding = false;
+        }
     }
 
     public void Action() {
