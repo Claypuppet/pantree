@@ -3,7 +3,8 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-	public float speed = 5.0f;
+    public float horizontalSpeed = 5.0f;
+    public float verticalSpeed = 5.0f;
 	public float acceleration = 1.0f;
 
 	// Use this for initialization
@@ -18,17 +19,17 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void MovePlayer(float radians, float speedModifier){
 		Vector3 curPos = this.transform.position;
-		Vector3 newPos = newPosition (curPos, radians, speedModifier);
-
-		this.transform.Translate (newPos);
+        Debug.Log(curPos);
+        Vector3 newPos = newPosition(curPos, radians, speedModifier);
+        Debug.Log(newPos);
+		this.transform.Translate(newPos);
 	}
 
-	Vector3 newPosition(Vector3 curPos, float radians, float speedmodifier){
-		Vector3 newPosition = new Vector3 ();
+	private Vector3 newPosition(Vector3 curPos, float radians, float speedmodifier){
+        Vector3 newPosition = new Vector3(Mathf.Cos(radians) / 100, Mathf.Sin(radians) / 100, 0);
 
-		newPosition = curPos;
-
-
+        newPosition.x *= this.horizontalSpeed;
+        newPosition.x *= this.verticalSpeed;
 
 		return newPosition;
 	}

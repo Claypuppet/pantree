@@ -6,6 +6,7 @@ public class TouchAreaHandler : MonoBehaviour {
 
     public GameObject thumbStickOuter;
     public GameObject thumbStickInner;
+    public GameObject thumbStickArrow;
     public GameObject gameHandler;
     private bool touchDown = false;
     private Vector2 basePoint;
@@ -89,5 +90,9 @@ public class TouchAreaHandler : MonoBehaviour {
     private void HideThumbStick() {
         this.ThumbStickOuterHandler.gameObject.SetActive(false);
         this.ThumbStickInnerHandler.gameObject.SetActive(false);
+    }
+
+    private void RepositionThumbArrow(float rad) {
+
     }
 }

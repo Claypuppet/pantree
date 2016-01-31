@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        /*
         float DeltaTime = Time.deltaTime;
         float moveHorizontal = CrossPlatformInputManager.GetAxis("Horizontal");
         float moveVertical = CrossPlatformInputManager.GetAxis("Vertical");
@@ -33,6 +34,6 @@ public class PlayerController : MonoBehaviour {
         {
             myTrans.Translate(moveHorizontal * MoveSpeed * DeltaTime, 0, 0);
         }
-
+        */
     }
 }
