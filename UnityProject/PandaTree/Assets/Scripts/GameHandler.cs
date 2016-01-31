@@ -16,6 +16,7 @@ public class GameHandler : MonoBehaviour {
     private int currentSeasonCount;
 
     private MainPlayerScript Player { get { return this.player.GetComponent<MainPlayerScript>(); } }
+    private PlayerMovement PlayerMovement { get { return this.player.GetComponent<PlayerMovement>(); } }
     private PanelInventoryHandler InventoryPanel { get { return this.inventoryPanel.GetComponent<PanelInventoryHandler>(); } }
     private PanelSeasonHandler SeasonPanel { get { return this.seasonPanel.GetComponent<PanelSeasonHandler>(); } }
 
@@ -60,5 +61,9 @@ public class GameHandler : MonoBehaviour {
 
     private void UpdateCanvasSeason() {
         //this.SeasonPanel.UpdateInventory(this.Player.Inventory);
+    }
+
+    public void MovePlayer(float rad) {
+        this.PlayerMovement.MovePlayer(rad, 1);
     }
 }
