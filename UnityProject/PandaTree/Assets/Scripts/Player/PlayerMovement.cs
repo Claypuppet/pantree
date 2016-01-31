@@ -19,9 +19,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void MovePlayer(float radians, float speedModifier){
 		Vector3 curPos = this.transform.position;
-        Debug.Log(curPos);
         Vector3 newPos = newPosition(curPos, radians, speedModifier);
-        Debug.Log(newPos);
 		this.transform.Translate(newPos);
 	}
 
