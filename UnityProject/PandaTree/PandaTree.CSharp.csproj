@@ -74,7 +74,8 @@
     <Compile Include="Assets\Scripts\Achievements\AchievementDefinition.cs" />
     <Compile Include="Assets\Scripts\Achievements\AchievementManager.cs" />
     <Compile Include="Assets\Scripts\Achievements\AchievementProgress.cs" />
-    <Compile Include="Assets\Scripts\Environment\InteractablePlaces\CollectibleItem.cs" />
+    <Compile Include="Assets\Scripts\Environment\InteractablePlaces\CollectableItem.cs" />
+    <Compile Include="Assets\Scripts\Environment\InteractablePlaces\InteractableCollisionHandler.cs" />
     <Compile Include="Assets\Scripts\Environment\InteractablePlaces\InteractablePlace.cs" />
     <Compile Include="Assets\Scripts\Environment\InteractablePlaces\Lake.cs" />
     <Compile Include="Assets\Scripts\Environment\InteractablePlaces\Shrine.cs" />
@@ -86,9 +87,12 @@
     <Compile Include="Assets\Scripts\Environment\Seasons\Summer.cs" />
     <Compile Include="Assets\Scripts\Environment\Seasons\Winter.cs" />
     <Compile Include="Assets\Scripts\Environment\Weather\Weather.cs" />
+    <Compile Include="Assets\Scripts\GUI\ActionHandler.cs" />
     <Compile Include="Assets\Scripts\GUI\InventoryItemDelegate.cs" />
     <Compile Include="Assets\Scripts\GUI\PanelInventoryHandler.cs" />
     <Compile Include="Assets\Scripts\GUI\PanelSeasonHandler.cs" />
+    <Compile Include="Assets\Scripts\GUI\ThumbStickHandler.cs" />
+    <Compile Include="Assets\Scripts\GUI\TouchAreaHandler.cs" />
     <Compile Include="Assets\Scripts\GameHandler.cs" />
     <Compile Include="Assets\Scripts\Inventory\Apple.cs" />
     <Compile Include="Assets\Scripts\Inventory\Banana.cs" />
@@ -100,10 +104,14 @@
     <Compile Include="Assets\Scripts\Inventory\Water.cs" />
     <Compile Include="Assets\Scripts\MainMenu\UIManager.cs" />
     <Compile Include="Assets\Scripts\Player\MainPlayerScript.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerColliderHandler.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\TouchLogic.cs" />
+    <Compile Include="Assets\Scripts\audioControl.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Graphical Assets\Environment\Materials\sdr_BasicLit.shader" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\XML\achievement_definitions.xml" />

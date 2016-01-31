@@ -4,6 +4,12 @@ using System.Xml;
 using System.Xml.Serialization;
 
 public class AchievementProgress {
+
+    public AchievementProgress() {
+        Achieved = new _Achieved();
+        Achieved.Value = false;
+    }
+
     [XmlElement("Id")]
     public string Id { get; set; }
 
