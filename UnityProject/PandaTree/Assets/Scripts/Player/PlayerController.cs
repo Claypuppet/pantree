@@ -13,12 +13,28 @@ public class PlayerController : MonoBehaviour {
     Vector3 position;
     Transform myTrans;
 
+	Animator anim;
+
     // Use this for initialization
     void Start ()
     {
         myTrans = this.transform;
         position = myTrans.transform.position;
+		//GameObject childFBX = GameObject.Find ("prefab_MainCharacter");
+		anim = GetComponentInChildren<Animator> ();
         Debug.Log(position);
+	}
+
+	public void setAnimationRunning(){
+		anim.SetBool ("playerMoving", true);
+	}
+
+	public void setAnimationIdle(){
+		anim.SetBool ("playerMoving", false);
+	}
+
+	public void doPickUpAnimation(){
+		anim.SetTrigger ("pickUp");
 	}
 
     // Update is called once per frame
