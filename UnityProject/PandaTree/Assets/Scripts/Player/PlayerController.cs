@@ -10,11 +10,8 @@ public class PlayerController : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        myTrans = this.transform;
-        position = myTrans.transform.position;
 		//GameObject childFBX = GameObject.Find ("prefab_MainCharacter");
 		anim = GetComponentInChildren<Animator> ();
-        Debug.Log(position);
 	}
 
 	public void setAnimationRunning(){
